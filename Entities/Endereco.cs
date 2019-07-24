@@ -15,7 +15,7 @@ namespace ConsoleApp36.Entities
         public string Unidade { get; set; }
         public string Ibge { get; set; }
         public string Gia { get; set; }
-        public string datadeConsulta { get; set; }
+        public string datadeConsulta { get; set; }   = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss:ff");
 
 
         public Endereco()
@@ -39,8 +39,6 @@ namespace ConsoleApp36.Entities
 
         public void PopularaBase(List<string> endereco)
         {
-
-
 
             {
                 endereco.Add("03707030");
